@@ -27,10 +27,10 @@ import '../../scss/base/swiper.scss';
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) {
+	if (document.querySelector('.main-block__slider')) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', {
+		new Swiper('.main-block__slider', {
 			// Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -117,7 +117,7 @@ function initSliders() {
 	if (document.querySelector('.product-slider')) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.product-slider__slider', {
+		new Swiper('.gogogo', {
 			// Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -127,12 +127,13 @@ function initSliders() {
 			slidesPerView: 4,
 			spaceBetween: 30,
 			parallax: true,
+			watchOverflow: true,
 			// autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
