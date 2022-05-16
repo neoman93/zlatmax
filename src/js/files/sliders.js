@@ -27,7 +27,7 @@ import '../../scss/base/swiper.scss';
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.main-block__slider')) {
+	if (document.querySelector('.main-block')) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.main-block__slider', {
@@ -117,11 +117,11 @@ function initSliders() {
 	if (document.querySelector('.product-slider')) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.gogogo', {
+		new Swiper('.product-slider__slider', {
 			// Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination],
+			modules: [Navigation, Pagination, Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 4,
